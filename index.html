@@ -73,6 +73,8 @@ body.lang-id .en, body.lang-en .id{display:none!important}
 .stats{display:grid;grid-template-columns:repeat(3,auto);gap:46px;margin-top:64px;padding-top:30px;border-top:1px solid rgba(255,255,255,.12);width:fit-content}
 .stats b{font-family:var(--serif);font-size:40px;color:var(--gold-2);font-weight:600;line-height:1}
 .stats span{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#9FACC0;margin-top:8px}
+.legacy{margin-top:56px;padding-top:28px;border-top:1px solid rgba(198,164,90,.35);max-width:620px;font-family:var(--serif);font-size:clamp(22px,2.4vw,28px);line-height:1.35;color:#E8ECF3;font-weight:500}
+.legacy em{color:var(--gold-2);font-style:italic;font-weight:600}
 .scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);width:1px;height:54px;background:linear-gradient(var(--gold),transparent);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
 
@@ -265,6 +267,7 @@ body.gated{overflow:hidden}
 }
 @media (max-width:620px){
   section{padding:80px 0}
+  .hero{min-height:auto}.hero-in{padding:120px 0 70px}.scroll{display:none}.legacy{margin-top:44px}
   .n-grid,.pr-grid,.l-grid,.f-top,.f2{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
   .stats{gap:26px}.stats b{font-size:32px}
@@ -336,11 +339,10 @@ body.gated{overflow:hidden}
         <a href="#praktik" class="btn btn-gold"><span class="id">Area Praktik</span><span class="en">Practice Areas</span> →</a>
         <a href="#advokat" class="btn btn-ghost"><span class="id">Profil Advokat</span><span class="en">Our Lawyers</span></a>
       </div>
-      <div class="stats rv d3">
-        <div><b>1991</b><span class="id">Berpraktik sejak</span><span class="en">Practicing since</span></div>
-        <div><b>6</b><span class="id">Advokat</span><span class="en">Lawyers</span></div>
-        <div><b>9</b><span class="id">Area praktik</span><span class="en">Practice areas</span></div>
-      </div>
+      <p class="legacy rv d3">
+        <span class="id"><em>Sejak 1991,</em> lebih dari 35 tahun dedikasi dalam advokasi dan penyelesaian perkara hukum.</span>
+        <span class="en"><em>Since 1991,</em> more than 35 years of dedication to advocacy and the resolution of legal matters.</span>
+      </p>
     </div>
   </div>
   <div class="scroll" aria-hidden="true"></div>
