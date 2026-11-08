@@ -120,7 +120,7 @@ h2 em{font-style:italic;color:var(--gold-d);font-weight:500}
 .step p{color:var(--muted);font-size:14.5px}
 
 /* NEWS */
-.news{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff}
+.news{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;border-top:1px solid rgba(198,164,90,.3)}
 .news h2{color:#fff}.news .sub{color:#AEB9CB}.news .kicker{color:var(--gold-2)}
 .news-top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
 .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:40px}
@@ -346,6 +346,63 @@ body.gated{overflow:hidden}
   <div class="scroll" aria-hidden="true"></div>
 </section>
 
+<!-- ========== NEWS / PUBLICATIONS ========== -->
+<section class="news" id="kabar">
+  <div class="wrap">
+    <div class="news-top rv">
+      <div>
+        <div class="kicker"><span class="id">Kabar &amp; Publikasi</span><span class="en">News &amp; Publications</span></div>
+        <h2><span class="id">Kegiatan, gagasan, <em>dan putusan.</em></span><span class="en">Activities, ideas, <em>and decisions.</em></span></h2>
+        <p class="sub"><span class="id">Ikuti kegiatan kantor, artikel, jurnal ilmiah, dan putusan dari perkara yang kami tangani.</span><span class="en">Follow our firm's activities, articles, academic journals, and decisions from matters we have handled.</span></p>
+      </div>
+      <a href="https://www.instagram.com/okiskandarlawfirm/" target="_blank" rel="noopener" class="btn btn-ghost">@okiskandarlawfirm ↗</a>
+    </div>
+    <div class="tabs rv" id="tabs">
+      <button data-f="all" class="on"><span class="id">Semua</span><span class="en">All</span></button>
+      <button data-f="ig"><span class="id">Kegiatan</span><span class="en">Activities</span></button>
+      <button data-f="art"><span class="id">Artikel</span><span class="en">Articles</span></button>
+      <button data-f="jur"><span class="id">Jurnal</span><span class="en">Journals</span></button>
+      <button data-f="put"><span class="id">Putusan</span><span class="en">Decisions</span></button>
+    </div>
+
+    <div class="ig-wrap rv" id="igwrap">
+      <behold-widget feed-id="VrrrwnKBZgOMc47PD25X"></behold-widget>
+      <noscript><a href="https://www.instagram.com/okiskandarlawfirm/">@okiskandarlawfirm</a></noscript>
+    </div>
+    <!-- GANTI kartu-kartu contoh di bawah dengan konten asli -->
+    <div class="n-grid" id="news">
+      <article class="card rv d1" data-c="art">
+        <div class="thumb t-art"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 11h8M8 15h8M8 19h5"/></svg></div>
+        <div class="body"><span class="badge"><span class="id">Artikel</span><span class="en">Article</span></span>
+          <h5><span class="id">Tagihan Macet? Kenali Pilihan Antara Gugatan, PKPU, dan Kepailitan</span><span class="en">Unpaid Receivables? Choosing Between a Lawsuit, PKPU, and Bankruptcy</span></h5>
+          <p><span class="id">Panduan ringkas bagi kreditor sebelum menentukan langkah hukum.</span><span class="en">A short guide for creditors before choosing a legal route.</span></p>
+          <div class="meta"><span><span class="id">5 menit baca</span><span class="en">5 min read</span></span><a href="#kabar"><span class="id">Baca</span><span class="en">Read</span> →</a></div></div>
+      </article>
+      <article class="card rv d2" data-c="jur">
+        <div class="thumb t-jur"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M4 5c3-1.5 5-1.5 8 0v15c-3-1.5-5-1.5-8 0zM20 5c-3-1.5-5-1.5-8 0v15c3-1.5 5-1.5 8 0z"/></svg></div>
+        <div class="body"><span class="badge"><span class="id">Jurnal</span><span class="en">Journal</span></span>
+          <h5><span class="id">Asas Keterbukaan dalam Pemberesan Boedel Pailit di Indonesia</span><span class="en">The Principle of Openness in Bankruptcy Estate Liquidation in Indonesia</span></h5>
+          <p><span class="id">Tautan ke publikasi ilmiah anggota tim kami.</span><span class="en">Link to academic publications by our team members.</span></p>
+          <div class="meta"><span>PDF</span><a href="#kabar"><span class="id">Unduh</span><span class="en">Download</span> →</a></div></div>
+      </article>
+      <article class="card rv" data-c="put">
+        <div class="thumb t-put"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M12 3v18M5 21h14M6 7h12M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg></div>
+        <div class="body"><span class="badge"><span class="id">Putusan</span><span class="en">Decision</span></span>
+          <h5><span class="id">Catatan Putusan: Pengesahan Perdamaian dalam PKPU</span><span class="en">Case Note: Court Ratification of a PKPU Composition Plan</span></h5>
+          <p><span class="id">Ringkasan putusan yang telah dipublikasikan resmi, tanpa membuka data klien.</span><span class="en">Summary of an officially published decision, without disclosing client data.</span></p>
+          <div class="meta"><span>Pengadilan Niaga</span><a href="#kabar"><span class="id">Baca</span><span class="en">Read</span> →</a></div></div>
+      </article>
+      <article class="card rv d2" data-c="art">
+        <div class="thumb t-art"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 11h8M8 15h8M8 19h5"/></svg></div>
+        <div class="body"><span class="badge"><span class="id">Artikel</span><span class="en">Article</span></span>
+          <h5><span class="id">Lima Hal yang Wajib Dicek Sebelum Membeli Lahan Perkebunan</span><span class="en">Five Things to Check Before Buying Plantation Land</span></h5>
+          <p><span class="id">Uji tuntas sederhana yang mencegah sengketa bertahun-tahun.</span><span class="en">Simple due diligence that prevents years of disputes.</span></p>
+          <div class="meta"><span><span class="id">4 menit baca</span><span class="en">4 min read</span></span><a href="#kabar"><span class="id">Baca</span><span class="en">Read</span> →</a></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ========== ABOUT ========== -->
 <section id="tentang">
   <div class="wrap about">
@@ -404,63 +461,6 @@ body.gated{overflow:hidden}
       <div class="step rv d1"><div class="dot">2</div><h4><span class="id">Analisis &amp; Strategi</span><span class="en">Analysis &amp; Strategy</span></h4><p><span class="id">Pendapat hukum tertulis, pilihan langkah beserta risikonya, dan rincian biaya yang jelas.</span><span class="en">A written legal opinion, options with their risks, and a clear fee breakdown.</span></p></div>
       <div class="step rv d2"><div class="dot">3</div><h4><span class="id">Pelaksanaan</span><span class="en">Execution</span></h4><p><span class="id">Ditangani langsung oleh tim, dengan laporan perkembangan berkala kepada Anda.</span><span class="en">Handled directly by our team, with regular progress reports to you.</span></p></div>
       <div class="step rv d3"><div class="dot">4</div><h4><span class="id">Penyelesaian</span><span class="en">Resolution</span></h4><p><span class="id">Perkara dituntaskan dan kami evaluasi bersama, termasuk langkah pencegahan ke depan.</span><span class="en">The matter is concluded and reviewed together, including preventive steps for the future.</span></p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== NEWS / PUBLICATIONS ========== -->
-<section class="news" id="kabar">
-  <div class="wrap">
-    <div class="news-top rv">
-      <div>
-        <div class="kicker"><span class="id">Kabar &amp; Publikasi</span><span class="en">News &amp; Publications</span></div>
-        <h2><span class="id">Kegiatan, gagasan, <em>dan putusan.</em></span><span class="en">Activities, ideas, <em>and decisions.</em></span></h2>
-        <p class="sub"><span class="id">Ikuti kegiatan kantor, artikel, jurnal ilmiah, dan putusan dari perkara yang kami tangani.</span><span class="en">Follow our firm's activities, articles, academic journals, and decisions from matters we have handled.</span></p>
-      </div>
-      <a href="https://www.instagram.com/okiskandarlawfirm/" target="_blank" rel="noopener" class="btn btn-ghost">@okiskandarlawfirm ↗</a>
-    </div>
-    <div class="tabs rv" id="tabs">
-      <button data-f="all" class="on"><span class="id">Semua</span><span class="en">All</span></button>
-      <button data-f="ig"><span class="id">Kegiatan</span><span class="en">Activities</span></button>
-      <button data-f="art"><span class="id">Artikel</span><span class="en">Articles</span></button>
-      <button data-f="jur"><span class="id">Jurnal</span><span class="en">Journals</span></button>
-      <button data-f="put"><span class="id">Putusan</span><span class="en">Decisions</span></button>
-    </div>
-
-    <div class="ig-wrap rv" id="igwrap">
-      <behold-widget feed-id="VrrrwnKBZgOMc47PD25X"></behold-widget>
-      <noscript><a href="https://www.instagram.com/okiskandarlawfirm/">@okiskandarlawfirm</a></noscript>
-    </div>
-    <!-- GANTI kartu-kartu contoh di bawah dengan konten asli -->
-    <div class="n-grid" id="news">
-      <article class="card rv d1" data-c="art">
-        <div class="thumb t-art"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 11h8M8 15h8M8 19h5"/></svg></div>
-        <div class="body"><span class="badge"><span class="id">Artikel</span><span class="en">Article</span></span>
-          <h5><span class="id">Tagihan Macet? Kenali Pilihan Antara Gugatan, PKPU, dan Kepailitan</span><span class="en">Unpaid Receivables? Choosing Between a Lawsuit, PKPU, and Bankruptcy</span></h5>
-          <p><span class="id">Panduan ringkas bagi kreditor sebelum menentukan langkah hukum.</span><span class="en">A short guide for creditors before choosing a legal route.</span></p>
-          <div class="meta"><span><span class="id">5 menit baca</span><span class="en">5 min read</span></span><a href="#kabar"><span class="id">Baca</span><span class="en">Read</span> →</a></div></div>
-      </article>
-      <article class="card rv d2" data-c="jur">
-        <div class="thumb t-jur"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M4 5c3-1.5 5-1.5 8 0v15c-3-1.5-5-1.5-8 0zM20 5c-3-1.5-5-1.5-8 0v15c3-1.5 5-1.5 8 0z"/></svg></div>
-        <div class="body"><span class="badge"><span class="id">Jurnal</span><span class="en">Journal</span></span>
-          <h5><span class="id">Asas Keterbukaan dalam Pemberesan Boedel Pailit di Indonesia</span><span class="en">The Principle of Openness in Bankruptcy Estate Liquidation in Indonesia</span></h5>
-          <p><span class="id">Tautan ke publikasi ilmiah anggota tim kami.</span><span class="en">Link to academic publications by our team members.</span></p>
-          <div class="meta"><span>PDF</span><a href="#kabar"><span class="id">Unduh</span><span class="en">Download</span> →</a></div></div>
-      </article>
-      <article class="card rv" data-c="put">
-        <div class="thumb t-put"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M12 3v18M5 21h14M6 7h12M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg></div>
-        <div class="body"><span class="badge"><span class="id">Putusan</span><span class="en">Decision</span></span>
-          <h5><span class="id">Catatan Putusan: Pengesahan Perdamaian dalam PKPU</span><span class="en">Case Note: Court Ratification of a PKPU Composition Plan</span></h5>
-          <p><span class="id">Ringkasan putusan yang telah dipublikasikan resmi, tanpa membuka data klien.</span><span class="en">Summary of an officially published decision, without disclosing client data.</span></p>
-          <div class="meta"><span>Pengadilan Niaga</span><a href="#kabar"><span class="id">Baca</span><span class="en">Read</span> →</a></div></div>
-      </article>
-      <article class="card rv d2" data-c="art">
-        <div class="thumb t-art"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 11h8M8 15h8M8 19h5"/></svg></div>
-        <div class="body"><span class="badge"><span class="id">Artikel</span><span class="en">Article</span></span>
-          <h5><span class="id">Lima Hal yang Wajib Dicek Sebelum Membeli Lahan Perkebunan</span><span class="en">Five Things to Check Before Buying Plantation Land</span></h5>
-          <p><span class="id">Uji tuntas sederhana yang mencegah sengketa bertahun-tahun.</span><span class="en">Simple due diligence that prevents years of disputes.</span></p>
-          <div class="meta"><span><span class="id">4 menit baca</span><span class="en">4 min read</span></span><a href="#kabar"><span class="id">Baca</span><span class="en">Read</span> →</a></div></div>
-      </article>
     </div>
   </div>
 </section>
