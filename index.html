@@ -141,6 +141,8 @@ h2 em{font-style:italic;color:var(--gold-d);font-weight:500}
 .card p{font-size:14px;color:#A9B4C6;flex:1}
 .card .meta{display:flex;justify-content:space-between;margin-top:18px;font-size:12px;color:#8592A8}
 .card .meta a{color:var(--gold-2);font-weight:700;letter-spacing:.06em}
+.ig-wrap{margin-top:34px;min-height:120px}
+.ig-wrap.off{display:none}
 .sample{position:absolute;top:12px;left:12px;background:rgba(0,0,0,.35);color:#fff;font-size:10px;letter-spacing:.14em;padding:4px 9px;text-transform:uppercase;border:1px solid rgba(255,255,255,.25)}
 
 /* PRACTICE */
@@ -424,15 +426,13 @@ body.gated{overflow:hidden}
       <button data-f="jur"><span class="id">Jurnal</span><span class="en">Journals</span></button>
       <button data-f="put"><span class="id">Putusan</span><span class="en">Decisions</span></button>
     </div>
+
+    <div class="ig-wrap rv" id="igwrap">
+      <behold-widget feed-id="VrrrwnKBZgOMc47PD25X"></behold-widget>
+      <noscript><a href="https://www.instagram.com/okiskandarlawfirm/">@okiskandarlawfirm</a></noscript>
+    </div>
     <!-- GANTI kartu-kartu contoh di bawah dengan konten asli -->
     <div class="n-grid" id="news">
-      <article class="card rv" data-c="ig">
-        <div class="thumb t-ig"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></div>
-        <div class="body"><span class="badge"><span class="id">Kegiatan</span><span class="en">Activity</span></span>
-          <h5><span class="id">Diskusi Hukum: Peran Kurator dalam Pemberesan Boedel Pailit</span><span class="en">Legal Discussion: The Curator's Role in Liquidating a Bankrupt Estate</span></h5>
-          <p><span class="id">Ringkasan kegiatan dan foto dari unggahan Instagram kantor.</span><span class="en">Summary and photos from the firm's Instagram post.</span></p>
-          <div class="meta"><span>Medan</span><a href="https://www.instagram.com/okiskandarlawfirm/" target="_blank" rel="noopener"><span class="id">Lihat</span><span class="en">View</span> →</a></div></div>
-      </article>
       <article class="card rv d1" data-c="art">
         <div class="thumb t-art"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 11h8M8 15h8M8 19h5"/></svg></div>
         <div class="body"><span class="badge"><span class="id">Artikel</span><span class="en">Article</span></span>
@@ -453,13 +453,6 @@ body.gated{overflow:hidden}
           <h5><span class="id">Catatan Putusan: Pengesahan Perdamaian dalam PKPU</span><span class="en">Case Note: Court Ratification of a PKPU Composition Plan</span></h5>
           <p><span class="id">Ringkasan putusan yang telah dipublikasikan resmi, tanpa membuka data klien.</span><span class="en">Summary of an officially published decision, without disclosing client data.</span></p>
           <div class="meta"><span>Pengadilan Niaga</span><a href="#kabar"><span class="id">Baca</span><span class="en">Read</span> →</a></div></div>
-      </article>
-      <article class="card rv d1" data-c="ig">
-        <div class="thumb t-ig"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></div>
-        <div class="body"><span class="badge"><span class="id">Kegiatan</span><span class="en">Activity</span></span>
-          <h5><span class="id">Penyuluhan Hukum Ketenagakerjaan bagi Pelaku Usaha Perkebunan</span><span class="en">Employment Law Outreach for Plantation Businesses</span></h5>
-          <p><span class="id">Ringkasan kegiatan dan foto dari unggahan Instagram kantor.</span><span class="en">Summary and photos from the firm's Instagram post.</span></p>
-          <div class="meta"><span>Sumatera Utara</span><a href="https://www.instagram.com/okiskandarlawfirm/" target="_blank" rel="noopener"><span class="id">Lihat</span><span class="en">View</span> →</a></div></div>
       </article>
       <article class="card rv d2" data-c="art">
         <div class="thumb t-art"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 11h8M8 15h8M8 19h5"/></svg></div>
@@ -712,6 +705,7 @@ body.gated{overflow:hidden}
       document.querySelectorAll('#tabs button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
       var f=b.dataset.f;
       document.querySelectorAll('#news .card').forEach(function(c){c.style.display=(f==='all'||c.dataset.c===f)?'':'none'});
+      document.getElementById('igwrap').classList.toggle('off',!(f==='all'||f==='ig'));
     });
   });
 
@@ -725,6 +719,13 @@ body.gated{overflow:hidden}
   });
   document.getElementById('yr').textContent=new Date().getFullYear();
 })();
+</script>
+<script>
+  (() => {
+    if(window.__bhldScript)return;window.__bhldScript=true;
+    const d=document,s=d.createElement("script");s.type="module";
+    s.src="https://w.behold.so/widget.js";setTimeout(()=>{d.head.append(s);},0);
+  })();
 </script>
 </body>
 </html>
