@@ -222,6 +222,26 @@ footer a:hover{color:var(--gold-2)}
 .disc{font-size:12px;line-height:1.7;margin-top:26px;color:#6E7B92}
 .f-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;font-size:12px}
 
+
+/* LANGUAGE GATE */
+.gate{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:30px;
+  background:radial-gradient(900px 500px at 50% 30%,rgba(27,75,128,.85),transparent 70%),linear-gradient(160deg,#0A1C36,#081629);
+  transition:opacity .6s ease,visibility .6s}
+.gate.hide{opacity:0;visibility:hidden}
+.gate-in{text-align:center;color:#fff;max-width:520px;width:100%}
+.gate-in img{width:64px;margin:0 auto 22px;border-radius:4px}
+.gate-name{font-family:var(--cap);font-size:20px;letter-spacing:.08em;line-height:1.4;font-weight:600}
+.gate-sub{font-size:11px;letter-spacing:.26em;color:var(--gold-2);text-transform:uppercase;margin-top:10px;font-weight:600}
+.gate-line{width:60px;height:1px;background:var(--gold);margin:34px auto 28px}
+.gate-q{font-size:13px;color:#AEB9CB;letter-spacing:.06em;margin-bottom:22px}
+.gate-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.gate-btns button{min-width:170px;padding:16px 26px;font:700 13px var(--sans);letter-spacing:.16em;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:.3s}
+.gate-btns .g1{background:linear-gradient(135deg,var(--gold-2),var(--gold) 55%,var(--gold-d));color:var(--navy);border:0}
+.gate-btns .g2{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+.gate-btns button:hover{transform:translateY(-2px)}
+.gate-btns .g2:hover{border-color:var(--gold);color:var(--gold-2)}
+body.gated{overflow:hidden}
+
 /* reveal */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
 .rv.in{opacity:1;transform:none}
@@ -254,7 +274,22 @@ footer a:hover{color:var(--gold-2)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.lines path{stroke-dashoffset:0}}
 </style>
 </head>
-<body class="lang-id">
+<body class="lang-id gated">
+<!-- ========== LANGUAGE GATE ========== -->
+<div class="gate" id="gate" role="dialog" aria-label="Choose language / Pilih bahasa">
+  <div class="gate-in">
+    <img src="images/logo-icon.png" alt="">
+    <div class="gate-name">OK Iskandar<br>Aziarni Hasibuan<br>&amp; Hidayah</div>
+    <div class="gate-sub">Advocates &amp; Legal Consultants</div>
+    <div class="gate-line"></div>
+    <div class="gate-q">Please choose your language<br>Silakan pilih bahasa</div>
+    <div class="gate-btns">
+      <button class="g2" data-g="en">English</button>
+      <button class="g1" data-g="id">Indonesian</button>
+    </div>
+  </div>
+</div>
+
 
 <!-- ========== NAV ========== -->
 <header class="nav" id="nav">
@@ -655,6 +690,14 @@ footer a:hover{color:var(--gold-2)}
   document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.l)})});
   var saved=null;try{saved=localStorage.getItem('okih-lang')}catch(e){}
   if(saved==='en'||saved==='id')setLang(saved);
+
+
+  // language gate: shown on every new visit (per browser session)
+  var gate=document.getElementById('gate'),seen=false;
+  try{seen=sessionStorage.getItem('okih-gate')==='1'}catch(e){}
+  function closeGate(){gate.classList.add('hide');body.classList.remove('gated');try{sessionStorage.setItem('okih-gate','1')}catch(e){}}
+  if(seen){gate.style.display='none';body.classList.remove('gated')}
+  gate.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.g);closeGate()})});
 
   // reveal
   var els=document.querySelectorAll('.rv');
