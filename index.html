@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O.K. Iskandar Aziarni Hasibuan Hidayah – Advocates and Legal Consultants</title>
+<meta name="description" content="Kantor hukum di Medan: kepailitan & PKPU, korporasi, perkebunan & pertanahan, ketenagakerjaan, litigasi perdata dan pidana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A1C36; --navy-2:#0F2747; --blue:#1B4B80; --ink:#16233A;
+  --gold:#C6A45A; --gold-2:#E4CC8E; --gold-d:#9C7C35;
+  --ivory:#F8F5EE; --line:rgba(198,164,90,.35); --muted:#5B6576;
+  --serif:'Cormorant Garamond',Georgia,serif; --cap:'Cinzel',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--ivory);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+/* bilingual */
+body.lang-id .en, body.lang-en .id{display:none!important}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .35s,box-shadow .35s,padding .35s;padding:18px 0}
+.nav.solid{background:rgba(10,28,54,.97);box-shadow:0 6px 30px rgba(0,0,0,.25);padding:10px 0}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand img{width:44px;height:auto;border-radius:3px}
+.brand b{font-family:var(--cap);font-weight:600;font-size:15px;letter-spacing:.07em;line-height:1.3;display:block;margin-bottom:3px}
+.brand small{font-size:9.5px;letter-spacing:.22em;color:var(--gold-2);text-transform:uppercase;font-weight:600}
+.menu{display:flex;align-items:center;gap:30px}
+.menu a{color:#E8ECF3;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;position:relative;padding:6px 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;height:1.5px;width:0;background:var(--gold);transition:width .3s}
+.menu a:hover::after{width:100%}
+.lang{display:flex;border:1px solid var(--line);border-radius:30px;overflow:hidden}
+.lang button{background:none;border:0;color:#cfd6e2;font:600 11.5px var(--sans);letter-spacing:.1em;padding:6px 12px;cursor:pointer}
+.lang button.on{background:var(--gold);color:var(--navy)}
+.burger{display:none;background:none;border:0;cursor:pointer;width:34px;height:28px;position:relative}
+.burger span{position:absolute;left:4px;right:4px;height:2px;background:#fff;transition:.3s}
+.burger span:nth-child(1){top:7px}.burger span:nth-child(2){top:13px}.burger span:nth-child(3){top:19px}
+.nav.open .burger span:nth-child(1){top:13px;transform:rotate(45deg)}
+.nav.open .burger span:nth-child(2){opacity:0}
+.nav.open .burger span:nth-child(3){top:13px;transform:rotate(-45deg)}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;color:#fff;overflow:hidden;
+  background:radial-gradient(1200px 600px at 85% 15%,rgba(27,75,128,.75),transparent 60%),
+             radial-gradient(900px 500px at 0% 100%,rgba(198,164,90,.14),transparent 60%),
+             linear-gradient(160deg,#0A1C36 0%,#0C2342 55%,#081629 100%)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.07;
+  background-image:linear-gradient(rgba(255,255,255,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.6) 1px,transparent 1px);background-size:64px 64px;
+  mask-image:radial-gradient(ellipse at 70% 40%,#000 0%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000 0%,transparent 70%)}
+.hero svg.lines{position:absolute;right:-6%;top:8%;width:62%;max-width:820px;opacity:.55}
+.lines path{fill:none;stroke:url(#g);stroke-width:1.2;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 3.2s ease forwards}
+.lines path:nth-child(2){animation-delay:.4s}.lines path:nth-child(3){animation-delay:.8s}.lines path:nth-child(4){animation-delay:1.2s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero-in{position:relative;padding:130px 0 90px;max-width:760px}
+.eyebrow{font-family:var(--cap);color:var(--gold-2);letter-spacing:.32em;font-size:12px;font-weight:600;display:flex;align-items:center;gap:14px;text-transform:uppercase}
+.eyebrow::before{content:"";width:42px;height:1px;background:var(--gold)}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(38px,6vw,72px);line-height:1.06;margin:22px 0 22px;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--gold-2);font-weight:500}
+.hero p.lead{font-size:clamp(16px,1.6vw,19px);color:#C9D2E0;max-width:600px}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;font:700 12.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;border-radius:2px;transition:.3s;cursor:pointer;border:0}
+.btn-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold) 55%,var(--gold-d));color:var(--navy);box-shadow:0 10px 30px rgba(198,164,90,.25)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(198,164,90,.4)}
+.btn-ghost{border:1px solid rgba(255,255,255,.35);color:#fff;background:transparent}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-2)}
+.stats{display:grid;grid-template-columns:repeat(3,auto);gap:46px;margin-top:64px;padding-top:30px;border-top:1px solid rgba(255,255,255,.12);width:fit-content}
+.stats b{font-family:var(--serif);font-size:40px;color:var(--gold-2);font-weight:600;line-height:1}
+.stats span{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#9FACC0;margin-top:8px}
+.scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);width:1px;height:54px;background:linear-gradient(var(--gold),transparent);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+/* SECTIONS */
+section{padding:110px 0}
+.kicker{font-family:var(--cap);font-size:12px;letter-spacing:.3em;color:var(--gold-d);font-weight:600;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:30px;height:1px;background:var(--gold)}
+h2{font-family:var(--serif);font-size:clamp(32px,4.2vw,50px);line-height:1.1;font-weight:600;color:var(--navy);margin:16px 0 18px}
+h2 em{font-style:italic;color:var(--gold-d);font-weight:500}
+.sub{color:var(--muted);max-width:640px;font-size:16.5px}
+.head-c{text-align:center}.head-c .kicker{justify-content:center}.head-c .sub{margin:0 auto}
+.head-c .kicker::after{content:"";width:30px;height:1px;background:var(--gold)}
+
+/* ABOUT */
+.about{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+.quote{position:relative;background:var(--navy);color:#fff;padding:56px 48px;border-radius:2px;overflow:hidden}
+.quote::before{content:"";position:absolute;inset:14px;border:1px solid var(--line);pointer-events:none}
+.quote .mark{font-family:var(--serif);font-size:120px;line-height:.6;color:var(--gold);opacity:.6}
+.quote p{font-family:var(--serif);font-size:clamp(24px,2.6vw,32px);line-height:1.3;font-style:italic;margin:14px 0 24px}
+.quote p.q-id{font-family:var(--sans);font-style:normal;font-size:15px;color:#C9D2E0;margin:-8px 0 26px;line-height:1.6}
+.quote cite{font-style:normal;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2)}
+.about-txt p{color:#3B4658;margin-bottom:16px}
+.tagline{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tagline span{border:1px solid var(--line);padding:8px 16px;font-size:12.5px;font-weight:600;color:var(--navy);letter-spacing:.04em;background:#fff}
+
+/* PILLARS */
+.pillars{background:#fff;border-top:1px solid #ECE6D8;border-bottom:1px solid #ECE6D8}
+.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:60px;border:1px solid #ECE6D8}
+.pill{padding:46px 38px;position:relative;transition:.4s;background:#fff}
+.pill+.pill{border-left:1px solid #ECE6D8}
+.pill:hover{background:var(--navy);color:#fff}
+.pill:hover h3{color:#fff}.pill:hover p{color:#BFC9D8}
+.pill .bar{width:44px;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-2));transition:width .4s}
+.pill:hover .bar{width:80px}
+.pill .no{font-family:var(--serif);font-size:54px;color:var(--gold);line-height:1;font-weight:500}
+.pill h3{font-family:var(--serif);font-size:30px;color:var(--navy);margin:22px 0 10px;font-weight:600;transition:.4s}
+.pill p{color:var(--muted);font-size:15px;transition:.4s}
+
+/* PROCESS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:60px;position:relative}
+.steps::before{content:"";position:absolute;top:27px;left:6%;right:6%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.step{position:relative;text-align:center;padding:0 8px}
+.step .dot{width:56px;height:56px;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;background:var(--ivory);border:1px solid var(--gold);font-family:var(--serif);font-size:24px;color:var(--navy);font-weight:600;position:relative;z-index:1}
+.step h4{font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:8px;font-weight:600}
+.step p{color:var(--muted);font-size:14.5px}
+
+/* NEWS */
+.news{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff}
+.news h2{color:#fff}.news .sub{color:#AEB9CB}.news .kicker{color:var(--gold-2)}
+.news-top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:40px}
+.tabs button{background:transparent;border:1px solid rgba(255,255,255,.2);color:#D6DDE8;padding:9px 18px;font:600 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:30px;transition:.3s}
+.tabs button.on,.tabs button:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.n-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:34px}
+.card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);transition:.35s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);border-color:var(--gold);background:rgba(255,255,255,.07)}
+.card .thumb{aspect-ratio:16/10;position:relative;overflow:hidden;display:grid;place-items:center}
+.card .thumb svg{width:46px;height:46px;stroke:var(--gold-2);opacity:.9}
+.t-ig{background:linear-gradient(135deg,#1B4B80,#0A1C36)}
+.t-art{background:linear-gradient(135deg,#24406A,#122847)}
+.t-jur{background:linear-gradient(135deg,#3A3A5C,#141B33)}
+.t-put{background:linear-gradient(135deg,#5A4A24,#1A1A1A)}
+.card .body{padding:22px 24px 26px;flex:1;display:flex;flex-direction:column}
+.badge{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-2)}
+.card h5{font-family:var(--serif);font-size:22px;line-height:1.25;margin:10px 0 10px;font-weight:600}
+.card p{font-size:14px;color:#A9B4C6;flex:1}
+.card .meta{display:flex;justify-content:space-between;margin-top:18px;font-size:12px;color:#8592A8}
+.card .meta a{color:var(--gold-2);font-weight:700;letter-spacing:.06em}
+.sample{position:absolute;top:12px;left:12px;background:rgba(0,0,0,.35);color:#fff;font-size:10px;letter-spacing:.14em;padding:4px 9px;text-transform:uppercase;border:1px solid rgba(255,255,255,.25)}
+
+/* PRACTICE */
+.pr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:60px}
+.pr{background:#fff;padding:36px 32px 34px;border:1px solid #ECE6D8;position:relative;overflow:hidden;transition:.4s}
+.pr::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-2));transition:width .45s}
+.pr:hover{transform:translateY(-6px);box-shadow:0 22px 50px rgba(10,28,54,.1)}
+.pr:hover::after{width:100%}
+.pr .ic{width:52px;height:52px;border-radius:50%;background:var(--ivory);border:1px solid var(--line);display:grid;place-items:center;margin-bottom:22px}
+.pr .ic svg{width:24px;height:24px;stroke:var(--navy);fill:none;stroke-width:1.5}
+.pr h3{font-family:var(--serif);font-size:25px;color:var(--navy);font-weight:600;line-height:1.2;margin-bottom:10px}
+.pr p{font-size:14.5px;color:var(--muted)}
+.pr ul{list-style:none;margin-top:14px}
+.pr li{font-size:13.5px;color:#3B4658;padding:5px 0 5px 18px;position:relative;border-top:1px dashed #ECE6D8}
+.pr li::before{content:"";position:absolute;left:0;top:13px;width:7px;height:1px;background:var(--gold)}
+.pr.feat{background:var(--navy);border-color:var(--navy)}
+.pr.feat h3{color:#fff}.pr.feat p{color:#BAC5D6}.pr.feat li{color:#DCE2EC;border-color:rgba(255,255,255,.12)}
+.pr.feat .ic{background:rgba(255,255,255,.06)}.pr.feat .ic svg{stroke:var(--gold-2)}
+.pr .flag{position:absolute;top:18px;right:18px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);background:var(--gold-2);padding:4px 10px;font-weight:700}
+
+/* LAWYERS */
+.lawyers{background:#fff;border-top:1px solid #ECE6D8}
+.tier{margin-top:56px}
+.tier>h6{font-family:var(--cap);font-size:13px;letter-spacing:.28em;color:var(--gold-d);text-transform:uppercase;margin-bottom:22px;display:flex;align-items:center;gap:14px}
+.tier>h6::after{content:"";flex:1;height:1px;background:#ECE6D8}
+.l-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.law{border:1px solid #ECE6D8;background:var(--ivory);display:flex;flex-direction:column;transition:.4s}
+.law:hover{box-shadow:0 22px 50px rgba(10,28,54,.1);transform:translateY(-4px)}
+.portrait{aspect-ratio:16/7;background:radial-gradient(circle at 50% 30%,#1D4A7E,#0A1C36 75%);position:relative;display:grid;place-items:center;overflow:hidden}
+.portrait::before{content:"";position:absolute;inset:14px;border:1px solid rgba(198,164,90,.45);z-index:1;pointer-events:none}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 20%;position:relative;z-index:0}
+.portrait .mono{font-family:var(--cap);font-size:52px;color:var(--gold-2);letter-spacing:.06em}
+.portrait .ph{position:absolute;bottom:22px;font-size:10px;letter-spacing:.18em;color:#8FA0BA;text-transform:uppercase}
+.law .info{padding:26px 26px 28px;flex:1;display:flex;flex-direction:column}
+.law .role{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-d);font-weight:700}
+.law h4{font-family:var(--serif);font-size:24px;color:var(--navy);line-height:1.2;margin:8px 0 6px;font-weight:600}
+.law .since{font-size:13px;color:var(--muted);margin-bottom:14px}
+.bio{font-size:14.5px;color:#3B4658;line-height:1.75;margin-top:4px}
+.law ul{list-style:none;font-size:13.5px;color:#3B4658}
+.law li{padding:6px 0 6px 20px;position:relative;border-top:1px solid #ECE6D8}
+.law li::before{content:"◆";position:absolute;left:0;top:6px;font-size:8px;color:var(--gold)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.tags span{font-size:11.5px;background:#fff;border:1px solid var(--line);padding:4px 10px;color:var(--navy);font-weight:600}
+
+/* CONTACT */
+.contact{background:linear-gradient(160deg,#0A1C36,#0F2747);color:#fff;position:relative;overflow:hidden}
+.contact::after{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border-radius:50%;border:1px solid rgba(198,164,90,.25);box-shadow:0 0 0 60px rgba(198,164,90,.04),0 0 0 140px rgba(198,164,90,.03)}
+.c-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:70px;position:relative;z-index:1}
+.contact h2{color:#fff}.contact .kicker{color:var(--gold-2)}.contact .sub{color:#B3BFD1}
+.free{margin-top:28px;border:1px solid var(--gold);padding:22px 24px;display:flex;gap:16px;align-items:flex-start;background:rgba(198,164,90,.08)}
+.free b{font-family:var(--serif);font-size:24px;color:var(--gold-2);font-weight:600;display:block;line-height:1.2}
+.free span{font-size:14px;color:#C9D2E0}
+.c-list{margin-top:34px;display:grid;gap:4px}
+.c-item{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.c-item .ci{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;flex:none}
+.c-item svg{width:18px;height:18px;stroke:var(--gold-2);fill:none;stroke-width:1.6}
+.c-item small{display:block;font-size:11px;letter-spacing:.16em;color:#8C9AB0;text-transform:uppercase}
+.c-item a,.c-item div>span{font-size:15.5px;color:#fff;font-weight:600}
+.form{background:#fff;color:var(--ink);padding:42px 38px;position:relative}
+.form::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold-d),var(--gold-2),var(--gold-d))}
+.form h3{font-family:var(--serif);font-size:30px;color:var(--navy);font-weight:600;margin-bottom:6px}
+.form>p{font-size:14px;color:var(--muted);margin-bottom:22px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fld{margin-bottom:14px}
+.fld label{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin-bottom:6px}
+.fld input,.fld select,.fld textarea{width:100%;border:1px solid #DCD5C4;background:var(--ivory);padding:12px 14px;font:500 15px var(--sans);color:var(--ink);border-radius:2px;outline:none;transition:.25s}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--gold);background:#fff}
+.fld textarea{min-height:110px;resize:vertical}
+.form .btn{width:100%;justify-content:center;margin-top:6px}
+.note{font-size:12px;color:var(--muted);margin-top:12px}
+.ok{display:none;margin-top:14px;padding:12px 14px;background:#F1F7EF;border:1px solid #BFD8B6;font-size:13.5px;color:#2F5A25}
+
+/* FOOTER */
+footer{background:#071326;color:#8D9AB0;padding:60px 0 30px;font-size:13.5px}
+.f-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.07)}
+footer h6{font-family:var(--cap);color:var(--gold-2);font-size:12px;letter-spacing:.24em;margin-bottom:16px;text-transform:uppercase}
+footer li{list-style:none;padding:4px 0}
+footer a:hover{color:var(--gold-2)}
+.disc{font-size:12px;line-height:1.7;margin-top:26px;color:#6E7B92}
+.f-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;font-size:12px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* RESPONSIVE */
+@media (max-width:980px){
+  .menu{position:fixed;inset:0 0 auto 0;top:0;flex-direction:column;align-items:flex-start;gap:0;background:var(--navy);padding:84px 6vw 30px;transform:translateY(-110%);transition:transform .45s;z-index:-1}
+  .nav.open .menu{transform:none;box-shadow:0 20px 40px rgba(0,0,0,.4)}
+  .menu a{font-size:15px;padding:14px 0;width:100%;border-bottom:1px solid rgba(255,255,255,.08)}
+  .menu .lang{margin-top:20px}
+  .burger{display:block}
+  .about,.c-grid{grid-template-columns:1fr;gap:50px}
+  .p-grid{grid-template-columns:1fr}.pill+.pill{border-left:0;border-top:1px solid #ECE6D8}
+  .steps{grid-template-columns:1fr 1fr;gap:40px 20px}.steps::before{display:none}
+  .n-grid,.pr-grid,.l-grid{grid-template-columns:1fr 1fr}
+  .f-top{grid-template-columns:1fr 1fr}
+  .hero svg.lines{width:110%;right:-40%;opacity:.3}
+}
+@media (max-width:620px){
+  section{padding:80px 0}
+  .n-grid,.pr-grid,.l-grid,.f-top,.f2{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .stats{gap:26px}.stats b{font-size:32px}
+  .brand b{font-size:12.5px}
+  .brand img{width:38px}
+  .quote{padding:44px 30px}.form{padding:34px 24px}
+  .portrait{aspect-ratio:16/7}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.lines path{stroke-dashoffset:0}}
+</style>
+</head>
+<body class="lang-id">
+
+<!-- ========== NAV ========== -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#beranda" class="brand">
+      <img src="images/logo-icon.png" alt="Logo O.K. Iskandar Aziarni Hasibuan Hidayah">
+      <span><b>OK Iskandar<br>Aziarni Hasibuan<br>&amp; Hidayah</b><small>Advocates &amp; Legal Consultants</small></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#beranda"><span class="id">Beranda</span><span class="en">Home</span></a>
+      <a href="#praktik"><span class="id">Area Praktik</span><span class="en">Practice Areas</span></a>
+      <a href="#advokat"><span class="id">Profil Advokat</span><span class="en">Our Lawyers</span></a>
+      <a href="#kontak"><span class="id">Hubungi Kami</span><span class="en">Contact Us</span></a>
+      <div class="lang" role="group" aria-label="Language">
+        <button data-l="id" class="on">ID</button><button data-l="en">EN</button>
+      </div>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="beranda">
+  <svg class="lines" viewBox="0 0 800 700" aria-hidden="true">
+    <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#C6A45A" stop-opacity="0"/><stop offset=".5" stop-color="#E4CC8E"/><stop offset="1" stop-color="#C6A45A" stop-opacity=".2"/></linearGradient></defs>
+    <path d="M40 620 C 220 520, 300 260, 520 220 S 760 120, 790 40"/>
+    <path d="M80 680 C 260 560, 360 330, 560 300 S 780 220, 800 150"/>
+    <path d="M400 20 L400 680 M200 350 L600 350"/>
+    <path d="M400 350 m -230 0 a 230 230 0 1 0 460 0 a 230 230 0 1 0 -460 0"/>
+  </svg>
+  <div class="wrap">
+    <div class="hero-in">
+      <h1 class="rv d1">
+        <span class="id">Keadilan bukan sekadar pernyataan, melainkan hal yang <em>wajib diperjuangkan.</em></span>
+        <span class="en">Justice is not merely a statement. It is something that <em>must be fought for.</em></span>
+      </h1>
+      <p class="lead rv d2">
+        <span class="id">Melangkah bersama Anda memperjuangkan keadilan yang sepantasnya Anda dapatkan, dengan strategi yang dirancang khusus untuk perkara Anda.</span>
+        <span class="en">Walking alongside you to pursue the justice you rightfully deserve, with a strategy crafted specifically for your matter.</span>
+      </p>
+      <div class="cta rv d3">
+        <a href="#praktik" class="btn btn-gold"><span class="id">Area Praktik</span><span class="en">Practice Areas</span> →</a>
+        <a href="#advokat" class="btn btn-ghost"><span class="id">Profil Advokat</span><span class="en">Our Lawyers</span></a>
+      </div>
+      <div class="stats rv d3">
+        <div><b>1991</b><span class="id">Berpraktik sejak</span><span class="en">Practicing since</span></div>
+        <div><b>6</b><span class="id">Advokat</span><span class="en">Lawyers</span></div>
+        <div><b>9</b><span class="id">Area praktik</span><span class="en">Practice areas</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll" aria-hidden="true"></div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="tentang">
+  <div class="wrap about">
+    <div class="quote rv">
+      <div class="mark">“</div>
+      <p class="q-en">Legal Services, Specially Handcrafted to Suit Your Needs.</p><p class="q-id"><span class="id">Layanan hukum yang dirancang khusus sesuai kebutuhan Anda.</span><span class="en">Every matter receives a strategy built around you.</span></p>
+      <cite>O.K. Iskandar Aziarni Hasibuan Hidayah</cite>
+    </div>
+    <div class="about-txt rv d1">
+      <div class="kicker"><span class="id">Tentang Kami</span><span class="en">About Us</span></div>
+      <h2><span class="id">Pengalaman tiga dekade, <em>pendekatan masa kini.</em></span><span class="en">Three decades of experience, <em>a modern approach.</em></span></h2>
+      <p><span class="id">O.K. Iskandar Aziarni Hasibuan Hidayah – Advocates and Legal Consultants adalah kantor hukum yang berkedudukan di Medan. Akarnya adalah pengalaman praktik advokat sejak tahun 1991, dan kini diperkuat generasi advokat yang menguasai kepailitan dan PKPU, audit hukum, serta mediasi.</span><span class="en">O.K. Iskandar Aziarni Hasibuan Hidayah – Advocates and Legal Consultants is a law firm based in Medan. It is rooted in legal practice dating back to 1991, and is now strengthened by a generation of lawyers skilled in bankruptcy and PKPU, legal audit, and mediation.</span></p>
+      <p><span class="id">Setiap perkara kami pelajari dari awal. Kami memahami kepentingan bisnis dan pribadi Anda, lalu menyusun strategi yang paling tepat, entah melalui negosiasi, mediasi, maupun litigasi.</span><span class="en">We study every matter from the ground up. We understand your business and personal interests, then design the most suitable strategy, whether through negotiation, mediation, or litigation.</span></p>
+      <div class="tagline">
+        <span class="id">Integritas</span><span class="en">Integrity</span>
+        <span class="id">Transparansi</span><span class="en">Transparency</span>
+        <span class="id">Ketelitian</span><span class="en">Precision</span>
+        <span class="id">Kerahasiaan</span><span class="en">Confidentiality</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PILLARS ========== -->
+<section class="pillars">
+  <div class="wrap">
+    <div class="head-c rv">
+      <div class="kicker"><span class="id">Nilai yang Kami Hadirkan</span><span class="en">What We Deliver</span></div>
+      <h2><span class="id">Lebih dari jasa hukum, <em>mencari jalan penyelesaian menuju kepastian.</em></span><span class="en">More than legal services, <em>finding the path to resolution and certainty.</em></span></h2>
+      <p class="sub"><span class="id">Klien tidak datang untuk membeli pasal dan prosedur. Mereka datang membawa persoalan yang perlu diselesaikan.</span><span class="en">Clients do not come to buy statutes and procedures. They come with problems that need to be resolved.</span></p>
+    </div>
+    <div class="p-grid">
+      <div class="pill rv"><div class="bar"></div>
+        <h3><span class="id">Solusi</span><span class="en">Solutions</span></h3>
+        <p><span class="id">Kami berfokus pada penyelesaian, bukan memperpanjang perkara. Setiap langkah diukur dari satu hal: apakah ia membawa persoalan Anda lebih dekat pada penyelesaian.</span><span class="en">We focus on resolution, not on prolonging disputes. Every step is measured by one thing: whether it brings your matter closer to a resolution.</span></p></div>
+      <div class="pill rv d1"><div class="bar"></div>
+        <h3><span class="id">Kemudahan</span><span class="en">Convenience</span></h3>
+        <p><span class="id">Anda fokus menjalankan usaha dan kehidupan Anda, urusan hukum kami yang tangani. Kami siap hadir di kantor atau lokasi usaha Anda dan menyampaikan laporan perkembangan secara berkala.</span><span class="en">You focus on your business and life while we handle the legal matters. We can meet at your office or business site and report progress regularly.</span></p></div>
+      <div class="pill rv d2"><div class="bar"></div>
+        <h3><span class="id">Ketenangan</span><span class="en">Peace of Mind</span></h3>
+        <p><span class="id">Penjelasan yang jernih tanpa istilah yang membingungkan, biaya yang disepakati sejak awal, dan satu advokat penanggung jawab yang selalu dapat Anda hubungi.</span><span class="en">Clear explanations free of confusing jargon, fees agreed from the outset, and one responsible lawyer you can always reach.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROCESS ========== -->
+<section>
+  <div class="wrap">
+    <div class="head-c rv">
+      <div class="kicker"><span class="id">Cara Kami Bekerja</span><span class="en">How We Work</span></div>
+      <h2><span class="id">Transparan di <em>setiap tahap.</em></span><span class="en">Transparent at <em>every stage.</em></span></h2>
+      <p class="sub"><span class="id">Anda selalu mengetahui posisi perkara, langkah berikutnya, dan biayanya.</span><span class="en">You always know where your matter stands, what comes next, and what it costs.</span></p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="dot">1</div><h4><span class="id">Konsultasi Awal</span><span class="en">Initial Consultation</span></h4><p><span class="id">Kami mendengarkan persoalan Anda secara menyeluruh dan menjaga kerahasiaannya.</span><span class="en">We listen to your matter in full and keep it strictly confidential.</span></p></div>
+      <div class="step rv d1"><div class="dot">2</div><h4><span class="id">Analisis &amp; Strategi</span><span class="en">Analysis &amp; Strategy</span></h4><p><span class="id">Pendapat hukum tertulis, pilihan langkah beserta risikonya, dan rincian biaya yang jelas.</span><span class="en">A written legal opinion, options with their risks, and a clear fee breakdown.</span></p></div>
+      <div class="step rv d2"><div class="dot">3</div><h4><span class="id">Pelaksanaan</span><span class="en">Execution</span></h4><p><span class="id">Ditangani langsung oleh tim, dengan laporan perkembangan berkala kepada Anda.</span><span class="en">Handled directly by our team, with regular progress reports to you.</span></p></div>
+      <div class="step rv d3"><div class="dot">4</div><h4><span class="id">Penyelesaian</span><span class="en">Resolution</span></h4><p><span class="id">Perkara dituntaskan dan kami evaluasi bersama, termasuk langkah pencegahan ke depan.</span><span class="en">The matter is concluded and reviewed together, including preventive steps for the future.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== NEWS / PUBLICATIONS ========== -->
+<section class="news" id="kabar">
+  <div class="wrap">
+    <div class="news-top rv">
+      <div>
+        <div class="kicker"><span class="id">Kabar &amp; Publikasi</span><span class="en">News &amp; Publications</span></div>
+        <h2><span class="id">Kegiatan, gagasan, <em>dan putusan.</em></span><span class="en">Activities, ideas, <em>and decisions.</em></span></h2>
+        <p class="sub"><span class="id">Ikuti kegiatan kantor, artikel, jurnal ilmiah, dan putusan dari perkara yang kami tangani.</span><span class="en">Follow our firm's activities, articles, academic journals, and decisions from matters we have handled.</span></p>
+      </div>
+      <a href="https://www.instagram.com/okiskandarlawfirm/" target="_blank" rel="noopener" class="btn btn-ghost">@okiskandarlawfirm ↗</a>
+    </div>
+    <div class="tabs rv" id="tabs">
+      <button data-f="all" class="on"><span class="id">Semua</span><span class="en">All</span></button>
+      <button data-f="ig"><span class="id">Kegiatan</span><span class="en">Activities</span></button>
+      <button data-f="art"><span class="id">Artikel</span><span class="en">Articles</span></button>
+      <button data-f="jur"><span class="id">Jurnal</span><span class="en">Journals</span></button>
+      <button data-f="put"><span class="id">Putusan</span><span class="en">Decisions</span></button>
+    </div>
+    <!-- GANTI kartu-kartu contoh di bawah dengan konten asli -->
+    <div class="n-grid" id="news">
+      <article class="card rv" data-c="ig">
+        <div class="thumb t-ig"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></div>
+        <div class="body"><span class="badge"><span class="id">Kegiatan</span><span class="en">Activity</span></span>
+          <h5><span class="id">Diskusi Hukum: Peran Kurator dalam Pemberesan Boedel Pailit</span><span class="en">Legal Discussion: The Curator's Role in Liquidating a Bankrupt Estate</span></h5>
+          <p><span class="id">Ringkasan kegiatan dan foto dari unggahan Instagram kantor.</span><span class="en">Summary and photos from the firm's Instagram post.</span></p>
+          <div class="meta"><span>Medan</span><a href="https://www.instagram.com/okiskandarlawfirm/" target="_blank" rel="noopener"><span class="id">Lihat</span><span class="en">View</span> →</a></div></div>
+      </article>
+      <article class="card rv d1" data-c="art">
+        <div class="thumb t-art"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 11h8M8 15h8M8 19h5"/></svg></div>
+        <div class="body"><span class="badge"><span class="id">Artikel</span><span class="en">Article</span></span>
+          <h5><span class="id">Tagihan Macet? Kenali Pilihan Antara Gugatan, PKPU, dan Kepailitan</span><span class="en">Unpaid Receivables? Choosing Between a Lawsuit, PKPU, and Bankruptcy</span></h5>
+          <p><span class="id">Panduan ringkas bagi kreditor sebelum menentukan langkah hukum.</span><span class="en">A short guide for creditors before choosing a legal route.</span></p>
+          <div class="meta"><span><span class="id">5 menit baca</span><span class="en">5 min read</span></span><a href="#kabar"><span class="id">Baca</span><span class="en">Read</span> →</a></div></div>
+      </article>
+      <article class="card rv d2" data-c="jur">
+        <div class="thumb t-jur"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M4 5c3-1.5 5-1.5 8 0v15c-3-1.5-5-1.5-8 0zM20 5c-3-1.5-5-1.5-8 0v15c3-1.5 5-1.5 8 0z"/></svg></div>
+        <div class="body"><span class="badge"><span class="id">Jurnal</span><span class="en">Journal</span></span>
+          <h5><span class="id">Asas Keterbukaan dalam Pemberesan Boedel Pailit di Indonesia</span><span class="en">The Principle of Openness in Bankruptcy Estate Liquidation in Indonesia</span></h5>
+          <p><span class="id">Tautan ke publikasi ilmiah anggota tim kami.</span><span class="en">Link to academic publications by our team members.</span></p>
+          <div class="meta"><span>PDF</span><a href="#kabar"><span class="id">Unduh</span><span class="en">Download</span> →</a></div></div>
+      </article>
+      <article class="card rv" data-c="put">
+        <div class="thumb t-put"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M12 3v18M5 21h14M6 7h12M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg></div>
+        <div class="body"><span class="badge"><span class="id">Putusan</span><span class="en">Decision</span></span>
+          <h5><span class="id">Catatan Putusan: Pengesahan Perdamaian dalam PKPU</span><span class="en">Case Note: Court Ratification of a PKPU Composition Plan</span></h5>
+          <p><span class="id">Ringkasan putusan yang telah dipublikasikan resmi, tanpa membuka data klien.</span><span class="en">Summary of an officially published decision, without disclosing client data.</span></p>
+          <div class="meta"><span>Pengadilan Niaga</span><a href="#kabar"><span class="id">Baca</span><span class="en">Read</span> →</a></div></div>
+      </article>
+      <article class="card rv d1" data-c="ig">
+        <div class="thumb t-ig"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></div>
+        <div class="body"><span class="badge"><span class="id">Kegiatan</span><span class="en">Activity</span></span>
+          <h5><span class="id">Penyuluhan Hukum Ketenagakerjaan bagi Pelaku Usaha Perkebunan</span><span class="en">Employment Law Outreach for Plantation Businesses</span></h5>
+          <p><span class="id">Ringkasan kegiatan dan foto dari unggahan Instagram kantor.</span><span class="en">Summary and photos from the firm's Instagram post.</span></p>
+          <div class="meta"><span>Sumatera Utara</span><a href="https://www.instagram.com/okiskandarlawfirm/" target="_blank" rel="noopener"><span class="id">Lihat</span><span class="en">View</span> →</a></div></div>
+      </article>
+      <article class="card rv d2" data-c="art">
+        <div class="thumb t-art"><span class="sample"><span class="id">Contoh</span><span class="en">Sample</span></span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 11h8M8 15h8M8 19h5"/></svg></div>
+        <div class="body"><span class="badge"><span class="id">Artikel</span><span class="en">Article</span></span>
+          <h5><span class="id">Lima Hal yang Wajib Dicek Sebelum Membeli Lahan Perkebunan</span><span class="en">Five Things to Check Before Buying Plantation Land</span></h5>
+          <p><span class="id">Uji tuntas sederhana yang mencegah sengketa bertahun-tahun.</span><span class="en">Simple due diligence that prevents years of disputes.</span></p>
+          <div class="meta"><span><span class="id">4 menit baca</span><span class="en">4 min read</span></span><a href="#kabar"><span class="id">Baca</span><span class="en">Read</span> →</a></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PRACTICE AREAS ========== -->
+<section id="praktik">
+  <div class="wrap">
+    <div class="head-c rv">
+      <div class="kicker"><span class="id">Area Praktik</span><span class="en">Practice Areas</span></div>
+      <h2><span class="id">Keahlian yang <em>menyeluruh.</em></span><span class="en">Comprehensive <em>expertise.</em></span></h2>
+      <p class="sub"><span class="id">Dari ruang rapat direksi hingga ruang sidang, kami mendampingi korporasi dan individu.</span><span class="en">From the boardroom to the courtroom, we advise corporations and individuals.</span></p>
+    </div>
+    <div class="pr-grid">
+      <div class="pr feat rv"><span class="flag"><span class="id">Unggulan</span><span class="en">Featured</span></span>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg></div>
+        <h3><span class="id">Kepailitan &amp; PKPU</span><span class="en">Bankruptcy &amp; PKPU</span></h3>
+        <p><span class="id">Pendampingan kreditor dan debitor, serta penugasan sebagai kurator dan pengurus.</span><span class="en">Representation of creditors and debtors, and appointments as curator and administrator.</span></p>
+        <ul><li><span class="id">Permohonan pailit &amp; PKPU</span><span class="en">Bankruptcy &amp; PKPU petitions</span></li><li><span class="id">Pengajuan &amp; verifikasi tagihan</span><span class="en">Claim filing &amp; verification</span></li><li><span class="id">Rencana perdamaian &amp; restrukturisasi utang</span><span class="en">Composition plans &amp; debt restructuring</span></li></ul></div>
+      <div class="pr rv d1">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3M3 12h18"/></svg></div>
+        <h3><span class="id">Korporasi &amp; Bisnis</span><span class="en">Corporate &amp; Commercial</span></h3>
+        <p><span class="id">Nasihat hukum korporasi dari pendirian hingga pembubaran.</span><span class="en">Corporate counsel from incorporation to dissolution.</span></p>
+        <ul><li><span class="id">RUPS &amp; tata kelola perusahaan</span><span class="en">GMS &amp; corporate governance</span></li><li><span class="id">Sengketa pemegang saham</span><span class="en">Shareholder disputes</span></li><li><span class="id">Likuidasi perusahaan</span><span class="en">Corporate liquidation</span></li></ul></div>
+      <div class="pr rv d2">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21V11M12 11c0-4 3-7 7-7 0 4-3 7-7 7zM12 14c0-3-2.5-5.5-6-5.5 0 3 2.5 5.5 6 5.5zM4 21h16"/></svg></div>
+        <h3><span class="id">Perkebunan &amp; Pertanahan</span><span class="en">Plantation &amp; Land</span></h3>
+        <p><span class="id">Ditangani tim yang berpengalaman di bidang pertanahan, termasuk mantan analis pertanahan BPN RI.</span><span class="en">Handled by a team experienced in land affairs, including a former land analyst at the National Land Agency.</span></p>
+        <ul><li><span class="id">Legalitas HGU &amp; hak atas tanah</span><span class="en">HGU &amp; land title legality</span></li><li><span class="id">Sengketa lahan</span><span class="en">Land disputes</span></li><li><span class="id">Uji tuntas akuisisi lahan</span><span class="en">Land acquisition due diligence</span></li></ul></div>
+      <div class="pr rv">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.5 1.5-4.6 4-5"/></svg></div>
+        <h3><span class="id">Ketenagakerjaan</span><span class="en">Employment &amp; Industrial Relations</span></h3>
+        <p><span class="id">Pencegahan dan penyelesaian perselisihan hubungan industrial.</span><span class="en">Prevention and resolution of industrial relations disputes.</span></p>
+        <ul><li><span class="id">Perselisihan di PHI</span><span class="en">Industrial Relations Court disputes</span></li><li><span class="id">PHK &amp; hak normatif</span><span class="en">Termination &amp; statutory rights</span></li><li><span class="id">Peraturan perusahaan &amp; PKB</span><span class="en">Company regulations &amp; CLA</span></li></ul></div>
+      <div class="pr rv d1">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 21h14M6 7h12M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg></div>
+        <h3><span class="id">Litigasi Perdata</span><span class="en">Civil Litigation</span></h3>
+        <p><span class="id">Penanganan sengketa perdata di semua tingkat peradilan.</span><span class="en">Civil disputes handled at every level of court.</span></p>
+        <ul><li><span class="id">Wanprestasi &amp; perbuatan melawan hukum</span><span class="en">Breach of contract &amp; tort</span></li><li><span class="id">Banding, kasasi &amp; PK</span><span class="en">Appeal, cassation &amp; review</span></li><li><span class="id">Eksekusi putusan</span><span class="en">Enforcement of judgments</span></li></ul></div>
+      <div class="pr rv d2">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3><span class="id">Pidana &amp; Tipikor</span><span class="en">Criminal &amp; Anti-Corruption</span></h3>
+        <p><span class="id">Pembelaan sejak penyelidikan sampai persidangan.</span><span class="en">Defense from investigation through trial.</span></p>
+        <ul><li><span class="id">Pendampingan pemeriksaan</span><span class="en">Assistance during questioning</span></li><li><span class="id">Perkara tindak pidana korupsi</span><span class="en">Corruption cases</span></li><li><span class="id">Pidana bisnis &amp; korporasi</span><span class="en">Business &amp; corporate crime</span></li></ul></div>
+      <div class="pr rv">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"/><path d="M9 9h6M9 13h6M9 17l2 1 4-3"/></svg></div>
+        <h3><span class="id">Kontrak, Transaksi &amp; Audit Hukum</span><span class="en">Contracts, Transactions &amp; Legal Audit</span></h3>
+        <p><span class="id">Perjanjian yang melindungi Anda, disusun sebelum masalah muncul.</span><span class="en">Agreements that protect you, drafted before problems arise.</span></p>
+        <ul><li><span class="id">Penyusunan &amp; telaah kontrak</span><span class="en">Contract drafting &amp; review</span></li><li><span class="id">Audit hukum (Certified Legal Auditor)</span><span class="en">Legal audit (Certified Legal Auditor)</span></li><li><span class="id">Uji tuntas transaksi bisnis</span><span class="en">Transaction due diligence</span></li></ul></div>
+      <div class="pr rv d1">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M7 11l3-3 4 1 3-3M3 13l4-2 5 5 5-5 4 2M8 16l2 2M11 15l2 2"/></svg></div>
+        <h3><span class="id">Mediasi &amp; Penyelesaian Sengketa</span><span class="en">Mediation &amp; ADR</span></h3>
+        <p><span class="id">Penyelesaian di luar pengadilan yang lebih cepat dan menjaga hubungan baik.</span><span class="en">Out-of-court resolution that is faster and preserves relationships.</span></p>
+        <ul><li><span class="id">Mediator bersertifikat</span><span class="en">Certified mediator</span></li><li><span class="id">Negosiasi &amp; somasi</span><span class="en">Negotiation &amp; legal demands</span></li><li><span class="id">Perdamaian di luar sidang</span><span class="en">Out-of-court settlement</span></li></ul></div>
+      <div class="pr rv d2">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 9.5V20h14V9.5"/><path d="M12 18s-3.5-2.2-3.5-4.4A1.9 1.9 0 0 1 12 12.5a1.9 1.9 0 0 1 3.5 1.1C15.5 15.8 12 18 12 18z"/></svg></div>
+        <h3><span class="id">Keluarga &amp; Waris</span><span class="en">Family &amp; Inheritance</span></h3>
+        <p><span class="id">Pendampingan yang berempati dan menjaga kerahasiaan perkara keluarga.</span><span class="en">Empathetic and confidential handling of family matters.</span></p>
+        <ul><li><span class="id">Perceraian &amp; hak asuh anak</span><span class="en">Divorce &amp; child custody</span></li><li><span class="id">Harta bersama</span><span class="en">Marital property</span></li><li><span class="id">Pembagian waris</span><span class="en">Inheritance distribution</span></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LAWYERS ========== -->
+<section class="lawyers" id="advokat">
+  <div class="wrap">
+    <div class="head-c rv">
+      <div class="kicker"><span class="id">Profil Advokat</span><span class="en">Our Lawyers</span></div>
+      <h2><span class="id">Para advokat <em>kami.</em></span><span class="en">Meet our <em>lawyers.</em></span></h2>
+      <p class="sub"><span class="id">Senioritas dan regenerasi dalam satu tim, seluruhnya alumni Fakultas Hukum Universitas Sumatera Utara.</span><span class="en">Seniority and a new generation in one team, all alumni of the Faculty of Law, Universitas Sumatera Utara.</span></p>
+    </div>
+
+    <div class="tier">
+      <h6><span class="id">Partner</span><span class="en">Partners</span></h6>
+      <div class="l-grid">
+        <article class="law rv">
+          <div class="portrait"><span class="mono">OKI</span></div>
+          <div class="info"><span class="role">Founding Partner</span>
+            <h4>O.K. Iskandar, S.H., M.H.</h4>
+            <div class="since"><span class="id">Advokat sejak 1991</span><span class="en">Advocate since 1991</span></div>
+            <p class="bio"><span class="id">Berpraktik sejak 1991, O.K. Iskandar telah lebih dari tiga dekade mendampingi korporasi, pelaku usaha, dan perorangan dalam perkara korporasi, bisnis, perdata, serta likuidasi perusahaan. Integritasnya tercermin dari kepercayaan rekan sejawat yang memilihnya sebagai Ketua Dewan Kehormatan PERADI selama tiga periode berturut-turut (2011–2026). Lulusan Sarjana dan Magister Hukum Universitas Sumatera Utara ini dikenal dengan pendekatan yang tenang, tegas, dan berorientasi pada penyelesaian.</span><span class="en">Practicing since 1991, O.K. Iskandar has spent more than three decades advising corporations, businesses, and individuals on corporate, commercial, civil, and liquidation matters. His integrity is reflected in the trust of his peers, who elected him Chair of the PERADI Honorary Council for three consecutive terms (2011–2026). A Bachelor and Master of Laws graduate of Universitas Sumatera Utara, he is known for a calm, firm, and resolution-oriented approach.</span></p>
+            <div class="tags"><span class="id">Korporasi</span><span class="en">Corporate</span><span class="id">Bisnis</span><span class="en">Business</span><span class="id">Perdata</span><span class="en">Civil</span><span class="id">Likuidasi</span><span class="en">Liquidation</span></div>
+          </div>
+        </article>
+        <article class="law rv d1">
+          <div class="portrait"><span class="mono">AH</span></div>
+          <div class="info"><span class="role">Founding Partner</span>
+            <h4>Aziarni Hasibuan, S.H., M.H.</h4>
+            <div class="since"><span class="id">Advokat sejak 1998</span><span class="en">Advocate since 1998</span></div>
+            <p class="bio"><span class="id">Berpraktik sebagai advokat sejak 1998, Aziarni Hasibuan berpengalaman panjang menangani perkara pidana, termasuk tindak pidana korupsi, sejak tahap penyidikan hingga persidangan. Ketelitiannya membaca perkara dan kepekaannya terhadap posisi klien menjadikannya pendamping yang dapat diandalkan pada saat-saat paling menentukan. Lulusan Sarjana dan Magister Hukum Universitas Sumatera Utara ini kini duduk dalam Dewan Penasihat PERADI Medan dan aktif dalam berbagai kegiatan sosial serta organisasi.</span><span class="en">An advocate since 1998, Aziarni Hasibuan has long experience in criminal matters, including corruption cases, from investigation through trial. Her careful reading of each case and sensitivity to her clients' position make her a dependable counsel at the most decisive moments. A Bachelor and Master of Laws graduate of Universitas Sumatera Utara, she sits on the Advisory Board of PERADI Medan and is active in social and organizational work.</span></p>
+            <div class="tags"><span class="id">Pidana</span><span class="en">Criminal</span><span class="id">Tipikor</span><span class="en">Anti-Corruption</span></div>
+          </div>
+        </article>
+        <article class="law rv d2">
+          <div class="portrait"><span class="mono">MIH</span></div>
+          <div class="info"><span class="role">Managing Partner</span>
+            <h4>Muhammad Ibnu Hidayah, S.H., M.H., CLA, CIM</h4>
+            <div class="since"><span class="id">Kurator &amp; Pengurus (AKPI)</span><span class="en">Curator &amp; Administrator (AKPI)</span></div>
+            <p class="bio"><span class="id">Sebagai Managing Partner, Muhammad Ibnu Hidayah memusatkan praktiknya pada hukum korporasi dan bisnis, perkebunan, ketenagakerjaan, dan secara khusus kepailitan serta PKPU. Sebagai kurator dan pengurus anggota AKPI, ia memahami proses kepailitan dari dua sisi: sebagai kuasa para pihak maupun sebagai pengelola harta pailit. Keahliannya diperkuat sertifikasi Certified Legal Auditor, Mediator IMAC, dan HKHPM Dasar I &amp; II, serta pengalaman litigasi perdata dan pidana korupsi. Ia juga dipercaya sebagai Wakil Bendahara PERADI Medan dan Ketua Bidang Keanggotaan AKPI Wilayah Sumatera.</span><span class="en">As Managing Partner, Muhammad Ibnu Hidayah focuses on corporate and commercial law, plantations, employment, and above all bankruptcy and PKPU. As a curator and administrator with AKPI, he understands insolvency from both sides: as counsel to the parties and as manager of the bankrupt estate. His expertise is reinforced by Certified Legal Auditor, IMAC Mediator, and HKHPM Basic I &amp; II certifications, along with civil and anti-corruption litigation experience. He also serves as Deputy Treasurer of PERADI Medan and Head of Membership of AKPI for the Sumatra Region.</span></p>
+            <div class="tags"><span class="id">Kepailitan &amp; PKPU</span><span class="en">Bankruptcy &amp; PKPU</span><span class="id">Korporasi</span><span class="en">Corporate</span><span class="id">Perkebunan</span><span class="en">Plantation</span><span class="id">Ketenagakerjaan</span><span class="en">Employment</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="tier">
+      <h6>Associates</h6>
+      <div class="l-grid">
+        <article class="law rv">
+          <div class="portrait"><span class="mono">KAL</span></div>
+          <div class="info"><span class="role">Associate</span>
+            <h4>Kiki Ayu Lestari Tambunan, S.H., M.Kn.</h4>
+            <div class="since"><span class="id">Advokat PERADI</span><span class="en">PERADI Advocate</span></div>
+            <p class="bio"><span class="id">Kiki Ayu Lestari Tambunan membawa perspektif yang jarang dimiliki advokat: pengalaman langsung dari dalam birokrasi pertanahan sebagai mantan Analis Pertanahan pada BPN RI. Latar belakang ini, ditambah gelar Magister Kenotariatan Universitas Sumatera Utara, membuatnya cermat menelusuri riwayat dan keabsahan hak atas tanah serta menyusun transaksi bisnis yang aman sejak awal.</span><span class="en">Kiki Ayu Lestari Tambunan brings a perspective few lawyers have: first-hand experience inside the land administration as a former Land Analyst at the National Land Agency (BPN RI). This background, together with a Master of Notarial Law from Universitas Sumatera Utara, makes her meticulous in tracing land title history and validity and in structuring business transactions that are secure from the outset.</span></p>
+            <div class="tags"><span class="id">Pertanahan</span><span class="en">Land</span><span class="id">Transaksi Bisnis</span><span class="en">Business Transactions</span></div>
+          </div>
+        </article>
+        <article class="law rv d1">
+          <div class="portrait"><span class="mono">BD</span></div>
+          <div class="info"><span class="role">Associate</span>
+            <h4>Bahrin Daulay, S.H.</h4>
+            <div class="since"><span class="id">Advokat PERADI</span><span class="en">PERADI Advocate</span></div>
+            <p class="bio"><span class="id">Bahrin Daulay, lulusan Fakultas Hukum Universitas Sumatera Utara, berpengalaman luas dalam perkara hukum keluarga, perceraian, dan waris, serta sengketa hubungan industrial. Perkara-perkara tersebut menuntut kepekaan sekaligus ketegasan, dan ia menanganinya dengan empati serta menjaga kerahasiaan klien. Keaktifannya dalam kegiatan sosial membuatnya dekat dan mudah dipahami oleh klien dari berbagai latar belakang.</span><span class="en">Bahrin Daulay, a graduate of the Faculty of Law, Universitas Sumatera Utara, has broad experience in family, divorce, and inheritance matters, as well as industrial relations disputes. Such matters demand both sensitivity and firmness, and he handles them with empathy and strict confidentiality. His active involvement in social work makes him approachable and easy to understand for clients from all walks of life.</span></p>
+            <div class="tags"><span class="id">Hukum Keluarga</span><span class="en">Family Law</span><span class="id">Waris</span><span class="en">Inheritance</span><span class="id">Hubungan Industrial</span><span class="en">Industrial Relations</span></div>
+          </div>
+        </article>
+        <article class="law rv d2">
+          <div class="portrait"><span class="mono">MFA</span></div>
+          <div class="info"><span class="role">Associate</span>
+            <h4>Muhammad Faqih Akbar, S.H., M.H.</h4>
+            <div class="since"><span class="id">Advokat</span><span class="en">Advocate</span></div>
+            <p class="bio"><span class="id">Muhammad Faqih Akbar memusatkan praktiknya pada hukum keperdataan dan kontrak. Lulusan Sarjana dan Magister Hukum Universitas Sumatera Utara ini terbiasa menyusun, menelaah, dan menegosiasikan perjanjian agar kepentingan klien terlindungi sejak tahap awal, sekaligus mendampingi penyelesaian sengketa perdata ketika perjanjian tidak dijalankan sebagaimana mestinya.</span><span class="en">Muhammad Faqih Akbar focuses his practice on civil and contract law. A Bachelor and Master of Laws graduate of Universitas Sumatera Utara, he regularly drafts, reviews, and negotiates agreements so that clients are protected from the outset, and represents them in civil disputes when agreements are not honored.</span></p>
+            <div class="tags"><span class="id">Keperdataan</span><span class="en">Civil Law</span><span class="id">Kontrak</span><span class="en">Contracts</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="contact" id="kontak">
+  <div class="wrap c-grid">
+    <div class="rv">
+      <div class="kicker"><span class="id">Hubungi Kami</span><span class="en">Contact Us</span></div>
+      <h2><span class="id">Ceritakan persoalan Anda. <em>Kami dengarkan.</em></span><span class="en">Tell us your concern. <em>We are listening.</em></span></h2>
+      <p class="sub"><span class="id">Seluruh informasi yang Anda sampaikan kami jaga kerahasiaannya.</span><span class="en">All information you share with us is kept strictly confidential.</span></p>
+      <div class="free">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#E4CC8E" stroke-width="1.5" style="flex:none"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+        <div><b><span class="id">Tidak perlu khawatir.</span><span class="en">No worries.</span></b>
+          <span><span class="id">Konsultasi pertama Anda tidak dikenakan biaya.</span><span class="en">We won't charge you for your first consultation.</span></span></div>
+      </div>
+      <div class="c-list">
+        <div class="c-item"><div class="ci"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></div>
+          <div><small><span class="id">Telepon</span><span class="en">Phone</span></small><a href="tel:+62614155062">(061) 415 5062</a></div></div>
+        <div class="c-item"><div class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <div><small>Email</small><a href="mailto:ok.iskandar.lawfirm@gmail.com">ok.iskandar.lawfirm@gmail.com</a></div></div>
+        <div class="c-item"><div class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></div>
+          <div><small>Instagram</small><a href="https://www.instagram.com/okiskandarlawfirm/" target="_blank" rel="noopener">@okiskandarlawfirm</a></div></div>
+        <div class="c-item"><div class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div><small><span class="id">Alamat</span><span class="en">Address</span></small><a href="https://www.google.com/maps/search/?api=1&query=Jl.+Brigjend.+Katamso+No.+371+Medan" target="_blank" rel="noopener">Jl. Brigjend. Katamso No. 371, Medan</a></div></div>
+      </div>
+    </div>
+
+    <form class="form rv d1" id="form">
+      <h3><span class="id">Jadwalkan Konsultasi</span><span class="en">Book a Consultation</span></h3>
+      <p><span class="id">Isi formulir singkat ini. Tim kami akan menghubungi Anda untuk mengatur jadwal.</span><span class="en">Fill in this short form and our team will contact you to arrange a time.</span></p>
+      <div class="f2">
+        <div class="fld"><label><span class="id">Nama</span><span class="en">Name</span></label><input name="nama" required></div>
+        <div class="fld"><label><span class="id">No. Telepon / WA</span><span class="en">Phone / WhatsApp</span></label><input name="telp" required></div>
+      </div>
+      <div class="fld"><label>Email</label><input type="email" name="email"></div>
+      <div class="fld"><label><span class="id">Bidang Perkara</span><span class="en">Matter Type</span></label>
+        <select name="bidang">
+          <option>Kepailitan &amp; PKPU / Bankruptcy &amp; PKPU</option><option>Korporasi &amp; Bisnis / Corporate</option>
+          <option>Perkebunan &amp; Pertanahan / Plantation &amp; Land</option><option>Ketenagakerjaan / Employment</option>
+          <option>Litigasi Perdata / Civil Litigation</option><option>Pidana &amp; Tipikor / Criminal</option>
+          <option>Kontrak &amp; Audit Hukum / Contracts &amp; Legal Audit</option><option>Mediasi / Mediation</option>
+          <option>Keluarga &amp; Waris / Family &amp; Inheritance</option><option>Lainnya / Other</option>
+        </select></div>
+      <div class="fld"><label><span class="id">Uraian Singkat</span><span class="en">Brief Description</span></label><textarea name="pesan"></textarea></div>
+      <button class="btn btn-gold" type="submit"><span class="id">Kirim Permintaan</span><span class="en">Send Request</span> →</button>
+      <div class="ok" id="ok"><span class="id">Terima kasih. Aplikasi email Anda akan terbuka dengan pesan yang sudah terisi. Jika tidak terbuka, silakan kirim ke ok.iskandar.lawfirm@gmail.com atau hubungi (061) 415 5062.</span><span class="en">Thank you. Your email app will open with the message pre-filled. If it does not, please write to ok.iskandar.lawfirm@gmail.com or call (061) 415 5062.</span></div>
+      <p class="note"><span class="id">Mengirim formulir ini tidak menimbulkan hubungan advokat–klien.</span><span class="en">Submitting this form does not create an attorney–client relationship.</span></p>
+    </form>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <a href="#beranda" class="brand"><img src="images/logo-icon.png" alt=""><span><b>OK Iskandar<br>Aziarni Hasibuan<br>&amp; Hidayah</b><small>Advocates &amp; Legal Consultants</small></span></a>
+        <p class="disc"><span class="id">Informasi pada situs ini bersifat umum dan tidak dimaksudkan sebagai nasihat hukum. Untuk persoalan spesifik, silakan berkonsultasi langsung dengan advokat kami.</span><span class="en">The information on this website is general in nature and is not intended as legal advice. For specific matters, please consult our lawyers directly.</span></p>
+      </div>
+      <div><h6><span class="id">Navigasi</span><span class="en">Navigate</span></h6>
+        <ul><li><a href="#beranda"><span class="id">Beranda</span><span class="en">Home</span></a></li><li><a href="#praktik"><span class="id">Area Praktik</span><span class="en">Practice Areas</span></a></li><li><a href="#advokat"><span class="id">Profil Advokat</span><span class="en">Our Lawyers</span></a></li><li><a href="#kabar"><span class="id">Kabar &amp; Publikasi</span><span class="en">News &amp; Publications</span></a></li><li><a href="#kontak"><span class="id">Hubungi Kami</span><span class="en">Contact Us</span></a></li></ul></div>
+      <div><h6><span class="id">Kantor</span><span class="en">Office</span></h6>
+        <ul><li>Jl. Brigjend. Katamso No. 371</li><li>Medan, Sumatera Utara</li><li>(061) 415 5062</li><li>ok.iskandar.lawfirm@gmail.com</li></ul></div>
+    </div>
+    <div class="f-bot"><span>© <span id="yr">2026</span> O.K. Iskandar Aziarni Hasibuan Hidayah. <span class="id">Hak cipta dilindungi.</span><span class="en">All rights reserved.</span></span><span>Advocates &amp; Legal Consultants</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav'),body=document.body;
+  function onScroll(){nav.classList.toggle('solid',window.scrollY>40)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  document.getElementById('burger').addEventListener('click',function(){nav.classList.toggle('open')});
+  document.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open')})});
+
+  // language
+  function setLang(l){
+    body.classList.remove('lang-id','lang-en');body.classList.add('lang-'+l);
+    document.documentElement.lang=l;
+    document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.l===l)});
+    try{localStorage.setItem('okih-lang',l)}catch(e){}
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.l)})});
+  var saved=null;try{saved=localStorage.getItem('okih-lang')}catch(e){}
+  if(saved==='en'||saved==='id')setLang(saved);
+
+  // reveal
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  // news filter
+  document.querySelectorAll('#tabs button').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('#tabs button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+      var f=b.dataset.f;
+      document.querySelectorAll('#news .card').forEach(function(c){c.style.display=(f==='all'||c.dataset.c===f)?'':'none'});
+    });
+  });
+
+  // form -> email
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();var f=e.target;
+    var s='Permintaan Konsultasi – '+f.nama.value;
+    var b='Nama: '+f.nama.value+'\nTelepon/WA: '+f.telp.value+'\nEmail: '+f.email.value+'\nBidang: '+f.bidang.value+'\n\n'+f.pesan.value;
+    document.getElementById('ok').style.display='block';
+    window.location.href='mailto:ok.iskandar.lawfirm@gmail.com?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
