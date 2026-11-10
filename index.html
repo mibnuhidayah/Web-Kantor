@@ -117,7 +117,7 @@ h2 em{font-style:italic;color:var(--gold-d);font-weight:500}
 /* ABOUT */
 .about{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
 .quote{position:relative;color:#fff;padding:64px 48px;border-radius:2px;overflow:hidden;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end;
-  background:linear-gradient(180deg,rgba(10,28,54,.35) 0%,rgba(10,28,54,.72) 45%,rgba(10,28,54,.95) 100%),url(images/batik-handcrafted.jpg) center 22%/cover no-repeat,var(--navy)}
+  background:linear-gradient(180deg,rgba(10,28,54,.35) 0%,rgba(10,28,54,.72) 45%,rgba(10,28,54,.95) 100%),url(images/batik-handcrafted.webp) center 22%/cover no-repeat,var(--navy)}
 .quote .mark,.quote p,.quote cite{position:relative;z-index:1;text-shadow:0 2px 14px rgba(0,0,0,.45)}
 .quote::before{content:"";position:absolute;inset:14px;border:1px solid var(--line);pointer-events:none}
 .quote .mark{font-family:var(--serif);font-size:120px;line-height:.6;color:var(--gold);opacity:.6}
@@ -227,6 +227,8 @@ h2 em{font-style:italic;color:var(--gold-d);font-weight:500}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
 .tags span{font-size:11.5px;background:#fff;border:1px solid var(--line);padding:4px 10px;color:var(--navy);font-weight:600}
 
+.law .prof{margin-top:18px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d);text-decoration:none;align-self:flex-start}
+.law .prof:hover{color:var(--navy)}
 /* CONTACT */
 .contact{background:linear-gradient(160deg,#0A1C36,#0F2747);color:#fff;position:relative;overflow:hidden}
 .contact::after{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border-radius:50%;border:1px solid rgba(198,164,90,.25);box-shadow:0 0 0 60px rgba(198,164,90,.04),0 0 0 140px rgba(198,164,90,.03)}
@@ -255,6 +257,8 @@ h2 em{font-style:italic;color:var(--gold-d);font-weight:500}
 .note{font-size:12px;color:var(--muted);margin-top:12px}
 .ok{display:none;margin-top:14px;padding:12px 14px;background:#F1F7EF;border:1px solid #BFD8B6;font-size:13.5px;color:#2F5A25}
 
+.map{margin-top:28px;border:1px solid var(--line);aspect-ratio:16/10;background:rgba(255,255,255,.04);overflow:hidden}
+.map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(.35) contrast(1.05)}
 /* FOOTER */
 footer{background:#071326;color:#8D9AB0;padding:60px 0 30px;font-size:13.5px}
 .f-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.07)}
@@ -356,7 +360,7 @@ body.gated{overflow:hidden}
 
 <!-- ========== HERO ========== -->
 <section class="hero" id="beranda">
-  <figure class="hero-photo" aria-hidden="true"><img src="images/kantor-oklaw.jpg" alt=""><figcaption>Jl. Brigjend. Katamso No. 371, Medan</figcaption></figure>
+  <figure class="hero-photo" aria-hidden="true"><img src="images/kantor-oklaw.webp" alt="" width="800" height="1153" fetchpriority="high" decoding="async"><figcaption>Jl. Brigjend. Katamso No. 371, Medan</figcaption></figure>
   <svg class="lines" viewBox="0 0 800 700" aria-hidden="true">
     <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#C6A45A" stop-opacity="0"/><stop offset=".5" stop-color="#E4CC8E"/><stop offset="1" stop-color="#C6A45A" stop-opacity=".2"/></linearGradient></defs>
     <path d="M40 620 C 220 520, 300 260, 520 220 S 760 120, 790 40"/>
@@ -412,7 +416,7 @@ body.gated{overflow:hidden}
     <div class="n-grid" id="news">
       <article class="card rv" data-c="art">
         <a href="artikel/renvoi-prosedur.html" style="display:flex;flex-direction:column;flex:1;text-decoration:none;color:inherit">
-        <div class="thumb"><img src="images/artikel-renvoi-thumb.jpg" alt="Ilustrasi renvoi prosedur" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div class="thumb"><img src="images/artikel-renvoi-thumb.webp" width="640" height="349" alt="Ilustrasi renvoi prosedur" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
         <div class="body"><span class="badge"><span class="id">Artikel · Kepailitan</span><span class="en">Article · Bankruptcy</span></span>
           <h5><span class="id">Renvoi Prosedur: Upaya Penyelesaian atas Jumlah Tagihan yang Tidak Cocok</span><span class="en">Renvoi Procedure: Resolving Disputed Claim Amounts in Bankruptcy</span></h5>
           <p><span class="id">Kapan keberatan diajukan, siapa yang berhak, mekanisme, upaya hukum, dan tindak lanjut Kurator.</span><span class="en">When to object, who may file, the procedure, legal remedies, and the curator's follow-up. (In Indonesian)</span></p>
@@ -421,7 +425,7 @@ body.gated{overflow:hidden}
       </article>
       <article class="card rv" data-c="art">
         <a href="artikel/dinyatakan-pailit.html" style="display:flex;flex-direction:column;flex:1;text-decoration:none;color:inherit">
-        <div class="thumb"><img src="images/artikel-pailit-thumb.jpg" alt="Ilustrasi restrukturisasi utang" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div class="thumb"><img src="images/artikel-pailit-thumb.webp" width="640" height="349" alt="Ilustrasi restrukturisasi utang" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
         <div class="body"><span class="badge"><span class="id">Artikel · Kepailitan</span><span class="en">Article · Bankruptcy</span></span>
           <h5><span class="id">Dinyatakan Pailit? Ini yang Harus Segera Anda Lakukan!</span><span class="en">Declared Bankrupt? Here Is What You Must Do Immediately</span></h5>
           <p><span class="id">Tujuh langkah awal bagi debitor setelah putusan pailit, lengkap dengan dasar hukumnya.</span><span class="en">Seven first steps for debtors after a bankruptcy ruling, with their legal basis. (In Indonesian)</span></p>
@@ -588,6 +592,7 @@ body.gated{overflow:hidden}
             <div class="since"><span class="id">Advokat sejak 1991</span><span class="en">Advocate since 1991</span></div>
             <p class="bio"><span class="id">Berpraktik sejak 1991, O.K. Iskandar telah lebih dari tiga dekade mendampingi korporasi, pelaku usaha, dan perorangan dalam perkara korporasi, bisnis, perdata, serta likuidasi perusahaan. Integritasnya tercermin dari kepercayaan rekan sejawat yang memilihnya sebagai Ketua Dewan Kehormatan PERADI selama tiga periode berturut-turut (2011–2026). Lulusan Sarjana dan Magister Hukum Universitas Sumatera Utara ini dikenal dengan pendekatan yang tenang, tegas, dan berorientasi pada penyelesaian.</span><span class="en">Practicing since 1991, O.K. Iskandar has spent more than three decades advising corporations, businesses, and individuals on corporate, commercial, civil, and liquidation matters. His integrity is reflected in the trust of his peers, who elected him Chair of the PERADI Honorary Council for three consecutive terms (2011–2026). A Bachelor and Master of Laws graduate of Universitas Sumatera Utara, he is known for a calm, firm, and resolution-oriented approach.</span></p>
             <div class="tags"><span class="id">Korporasi</span><span class="en">Corporate</span><span class="id">Bisnis</span><span class="en">Business</span><span class="id">Perdata</span><span class="en">Civil</span><span class="id">Likuidasi</span><span class="en">Liquidation</span></div>
+            <a class="prof" href="advokat/ok-iskandar.html"><span class="id">Lihat profil lengkap</span><span class="en">View full profile</span> →</a>
           </div>
         </article>
         <article class="law rv d1">
@@ -597,6 +602,7 @@ body.gated{overflow:hidden}
             <div class="since"><span class="id">Advokat sejak 1998</span><span class="en">Advocate since 1998</span></div>
             <p class="bio"><span class="id">Berpraktik sebagai advokat sejak 1998, Aziarni Hasibuan berpengalaman panjang menangani perkara pidana, termasuk tindak pidana korupsi, sejak tahap penyidikan hingga persidangan. Ketelitiannya membaca perkara dan kepekaannya terhadap posisi klien menjadikannya pendamping yang dapat diandalkan pada saat-saat paling menentukan. Lulusan Sarjana dan Magister Hukum Universitas Sumatera Utara ini kini duduk dalam Dewan Penasihat PERADI Medan dan aktif dalam berbagai kegiatan sosial serta organisasi.</span><span class="en">An advocate since 1998, Aziarni Hasibuan has long experience in criminal matters, including corruption cases, from investigation through trial. Her careful reading of each case and sensitivity to her clients' position make her a dependable counsel at the most decisive moments. A Bachelor and Master of Laws graduate of Universitas Sumatera Utara, she sits on the Advisory Board of PERADI Medan and is active in social and organizational work.</span></p>
             <div class="tags"><span class="id">Pidana</span><span class="en">Criminal</span><span class="id">Tipikor</span><span class="en">Anti-Corruption</span></div>
+            <a class="prof" href="advokat/aziarni-hasibuan.html"><span class="id">Lihat profil lengkap</span><span class="en">View full profile</span> →</a>
           </div>
         </article>
         <article class="law rv d2">
@@ -604,8 +610,9 @@ body.gated{overflow:hidden}
           <div class="info"><span class="role">Managing Partner</span>
             <h4>Muhammad Ibnu Hidayah, S.H., M.H., CLA, CIM</h4>
             <div class="since"><span class="id">Kurator &amp; Pengurus (AKPI)</span><span class="en">Curator &amp; Administrator (AKPI)</span></div>
-            <p class="bio"><span class="id">Sebagai Managing Partner, Muhammad Ibnu Hidayah memusatkan praktiknya pada hukum korporasi dan bisnis, perkebunan, ketenagakerjaan, dan secara khusus kepailitan serta PKPU. Sebagai kurator dan pengurus anggota AKPI, ia memahami proses kepailitan dari dua sisi: sebagai kuasa para pihak maupun sebagai pengelola harta pailit. Keahliannya diperkuat sertifikasi Certified Legal Auditor, Mediator IMAC, dan HKHPM Dasar I &amp; II, serta pengalaman litigasi perdata dan pidana korupsi. Ia juga dipercaya sebagai Wakil Bendahara PERADI Medan dan Ketua Bidang Keanggotaan AKPI Wilayah Sumatera.</span><span class="en">As Managing Partner, Muhammad Ibnu Hidayah focuses on corporate and commercial law, plantations, employment, and above all bankruptcy and PKPU. As a curator and administrator with AKPI, he understands insolvency from both sides: as counsel to the parties and as manager of the bankrupt estate. His expertise is reinforced by Certified Legal Auditor, IMAC Mediator, and HKHPM Basic I &amp; II certifications, along with civil and anti-corruption litigation experience. He also serves as Deputy Treasurer of PERADI Medan and Head of Membership of AKPI for the Sumatra Region.</span></p>
+            <p class="bio"><span class="id">Sebagai Managing Partner, Muhammad Ibnu Hidayah memusatkan praktiknya pada hukum korporasi dan bisnis, perkebunan, ketenagakerjaan, dan secara khusus kepailitan serta PKPU. Sebagai kurator dan pengurus anggota AKPI, ia memahami proses kepailitan dari dua sisi: sebagai kuasa para pihak maupun sebagai pengelola harta pailit. Keahliannya diperkuat sertifikasi Certified Legal Auditor, Mediator IMAC, dan HKHPM Dasar I &amp; II, serta pengalaman litigasi perdata dan pidana korupsi. Ia juga dipercaya sebagai Wakil Bendahara PERADI Medan dan Ketua Bidang Organisasi AKPI Wilayah Sumatera.</span><span class="en">As Managing Partner, Muhammad Ibnu Hidayah focuses on corporate and commercial law, plantations, employment, and above all bankruptcy and PKPU. As a curator and administrator with AKPI, he understands insolvency from both sides: as counsel to the parties and as manager of the bankrupt estate. His expertise is reinforced by Certified Legal Auditor, IMAC Mediator, and HKHPM Basic I &amp; II certifications, along with civil and anti-corruption litigation experience. He also serves as Deputy Treasurer of PERADI Medan and Head of Organization of AKPI for the Sumatra Region.</span></p>
             <div class="tags"><span class="id">Kepailitan &amp; PKPU</span><span class="en">Bankruptcy &amp; PKPU</span><span class="id">Korporasi</span><span class="en">Corporate</span><span class="id">Perkebunan</span><span class="en">Plantation</span><span class="id">Ketenagakerjaan</span><span class="en">Employment</span></div>
+            <a class="prof" href="advokat/muhammad-ibnu-hidayah.html"><span class="id">Lihat profil lengkap</span><span class="en">View full profile</span> →</a>
           </div>
         </article>
       </div>
@@ -621,6 +628,7 @@ body.gated{overflow:hidden}
             <div class="since"><span class="id">Advokat PERADI</span><span class="en">PERADI Advocate</span></div>
             <p class="bio"><span class="id">Kiki Ayu Lestari Tambunan membawa perspektif yang jarang dimiliki advokat: pengalaman langsung dari dalam birokrasi pertanahan sebagai mantan Analis Pertanahan pada BPN RI. Latar belakang ini, ditambah gelar Magister Kenotariatan Universitas Sumatera Utara, membuatnya cermat menelusuri riwayat dan keabsahan hak atas tanah serta menyusun transaksi bisnis yang aman sejak awal.</span><span class="en">Kiki Ayu Lestari Tambunan brings a perspective few lawyers have: first-hand experience inside the land administration as a former Land Analyst at the National Land Agency (BPN RI). This background, together with a Master of Notarial Law from Universitas Sumatera Utara, makes her meticulous in tracing land title history and validity and in structuring business transactions that are secure from the outset.</span></p>
             <div class="tags"><span class="id">Pertanahan</span><span class="en">Land</span><span class="id">Transaksi Bisnis</span><span class="en">Business Transactions</span></div>
+            <a class="prof" href="advokat/kiki-ayu-lestari-tambunan.html"><span class="id">Lihat profil lengkap</span><span class="en">View full profile</span> →</a>
           </div>
         </article>
         <article class="law rv d1">
@@ -630,15 +638,17 @@ body.gated{overflow:hidden}
             <div class="since"><span class="id">Advokat PERADI</span><span class="en">PERADI Advocate</span></div>
             <p class="bio"><span class="id">Bahrin Daulay, lulusan Fakultas Hukum Universitas Sumatera Utara, berpengalaman luas dalam perkara hukum keluarga, perceraian, dan waris, serta sengketa hubungan industrial. Perkara-perkara tersebut menuntut kepekaan sekaligus ketegasan, dan ia menanganinya dengan empati serta menjaga kerahasiaan klien. Keaktifannya dalam kegiatan sosial membuatnya dekat dan mudah dipahami oleh klien dari berbagai latar belakang.</span><span class="en">Bahrin Daulay, a graduate of the Faculty of Law, Universitas Sumatera Utara, has broad experience in family, divorce, and inheritance matters, as well as industrial relations disputes. Such matters demand both sensitivity and firmness, and he handles them with empathy and strict confidentiality. His active involvement in social work makes him approachable and easy to understand for clients from all walks of life.</span></p>
             <div class="tags"><span class="id">Hukum Keluarga</span><span class="en">Family Law</span><span class="id">Waris</span><span class="en">Inheritance</span><span class="id">Hubungan Industrial</span><span class="en">Industrial Relations</span></div>
+            <a class="prof" href="advokat/bahrin-daulay.html"><span class="id">Lihat profil lengkap</span><span class="en">View full profile</span> →</a>
           </div>
         </article>
         <article class="law rv d2">
           <div class="portrait"><span class="mono">MFA</span></div>
           <div class="info"><span class="role">Associate</span>
             <h4>Muhammad Faqih Akbar, S.H., M.H., CIM, CLA</h4>
-            <div class="since"><span class="id">Advokat</span><span class="en">Advocate</span></div>
+            <div class="since"><span class="id">Konsultan Hukum</span><span class="en">Legal Consultant</span></div>
             <p class="bio"><span class="id">Muhammad Faqih Akbar memusatkan praktiknya pada hukum keperdataan dan kontrak. Lulusan Sarjana dan Magister Hukum Universitas Sumatera Utara ini terbiasa menyusun, menelaah, dan menegosiasikan perjanjian agar kepentingan klien terlindungi sejak tahap awal, sekaligus mendampingi penyelesaian sengketa perdata ketika perjanjian tidak dijalankan sebagaimana mestinya.</span><span class="en">Muhammad Faqih Akbar focuses his practice on civil and contract law. A Bachelor and Master of Laws graduate of Universitas Sumatera Utara, he regularly drafts, reviews, and negotiates agreements so that clients are protected from the outset, and represents them in civil disputes when agreements are not honored.</span></p>
             <div class="tags"><span class="id">Keperdataan</span><span class="en">Civil Law</span><span class="id">Kontrak</span><span class="en">Contracts</span></div>
+            <a class="prof" href="advokat/muhammad-faqih-akbar.html"><span class="id">Lihat profil lengkap</span><span class="en">View full profile</span> →</a>
           </div>
         </article>
       </div>
@@ -667,6 +677,9 @@ body.gated{overflow:hidden}
           <div><small>Instagram</small><a href="https://www.instagram.com/oklaw.id/" target="_blank" rel="noopener">@oklaw.id</a></div></div>
         <div class="c-item"><div class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
           <div><small><span class="id">Alamat</span><span class="en">Address</span></small><a href="https://www.google.com/maps/search/?api=1&query=Jl.+Brigjend.+Katamso+No.+371+Medan" target="_blank" rel="noopener">Jl. Brigjend. Katamso No. 371, Medan</a></div></div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=Jl.%20Brigjend.%20Katamso%20No.%20371%2C%20Medan&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta lokasi kantor OK Iskandar Aziarni Hasibuan &amp; Hidayah" allowfullscreen></iframe>
       </div>
     </div>
 
